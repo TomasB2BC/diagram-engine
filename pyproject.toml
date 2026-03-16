@@ -1,0 +1,15 @@
+[project]
+name = "diagram-engine"
+version = "0.1.0"
+description = "Generate professional diagrams from natural language. Layout engine with arrow routing, collision detection, typography system, and visual validation."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "playwright>=1.40.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/TomasB2BC/diagram-engine"
+Repository = "https://github.com/TomasB2BC/diagram-engine"
+Issues = "https://github.com/TomasB2BC/diagram-engine/issues"
