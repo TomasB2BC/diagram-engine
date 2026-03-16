@@ -6,7 +6,7 @@ collision detection, typography system, and visual validation.
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Example diagram](examples/linkedin-portrait.png)
+![Example diagram](examples/engine-pipeline.png)
 
 > "Why not just use Mermaid?" -- Mermaid auto-generates generic diagrams from text.
 > This engine generates diagrams that **argue visually**: custom typography, semantic
@@ -36,25 +36,27 @@ That's it. The SKILL.md teaches Claude how to use the engine.
 
 ## Example Gallery
 
-### Side-by-Side Comparison
-![Side-by-side comparison](examples/side-by-side.png)
-Compare two approaches, architectures, or options. Shared elements in the center gap.
-**Builder:** [`patterns/side-by-side.py`](patterns/side-by-side.py)
+Each example explains a part of the engine while demonstrating a different visual pattern.
 
-### Layered Architecture Stack
-![Layered stack](examples/layered-stack.png)
-Horizontal layers with color gradient and description sidebar. Inner boxes show components.
-**Builder:** [`patterns/layered-stack.py`](patterns/layered-stack.py)
+### How the Engine Builds a Diagram (Complex Workflow)
+![Engine pipeline](examples/engine-pipeline.png)
+The full rendering pipeline: user prompt through builder, engine, JSON, and validation loop.
+**Pattern:** Complex vertical workflow with convergence, fan-out, and loop-back arrow.
 
-### Complex Vertical Workflow
-![Complex workflow](examples/complex-workflow.png)
-Convergence, processing, fan-out, and persistence. Three sources merge into one pipeline.
-**Builder:** [`patterns/complex-workflow.py`](patterns/complex-workflow.py)
+### What's Inside the Engine (Layered Stack)
+![Engine architecture](examples/engine-architecture.png)
+Four layers from pattern selection down to validated output, with description sidebar.
+**Pattern:** Layered stack with color gradient and inner component boxes.
 
-### LinkedIn Portrait (Numbered Sequence)
-![LinkedIn portrait](examples/linkedin-portrait.png)
-Portrait 4:5 format with numbered steps, side annotations, and iteration loop arrows.
-**Builder:** [`patterns/linkedin-portrait.py`](patterns/linkedin-portrait.py)
+### Without Engine vs With Engine (Side-by-Side)
+![Without vs with](examples/without-vs-with.png)
+Manual JSON coordinate guessing vs declarative engine with auto-layout.
+**Pattern:** Side-by-side comparison with shared components in the center gap.
+
+### The Validation Loop (Numbered Sequence)
+![Validation loop](examples/validation-loop.png)
+Build, render, inspect, find errors, fix the generator -- repeat until clean.
+**Pattern:** Portrait numbered sequence with side annotations and loop-back arrow.
 
 ## Architecture
 
