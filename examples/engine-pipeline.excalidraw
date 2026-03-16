@@ -198,8 +198,8 @@
     {
       "type": "text",
       "id": "prompt_note",
-      "x": 510,
-      "y": 208,
+      "x": 300,
+      "y": 140,
       "width": 230,
       "height": 30,
       "text": "Natural language -- no JSON,\nno coordinates, no manual layout",
